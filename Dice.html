@@ -1,0 +1,77 @@
+.<!DOCTYPE html>
+<html>
+<head>
+	<style>
+body {
+  background-image: url("73.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>
+	<title></title>
+</head>
+<body>
+
+
+
+<button onclick="Yes()" >Click me</button>
+	<button onclick="No()" >Do not click me</button>
+
+<img src="" id ="dice">
+
+
+<script type="text/javascript">
+//These lines of code create two buttons and an image element in an HTML document. The first button has an onclick attribute that specifies a function to be called when the button is clicked. The function is called Yes. The second button has an onclick attribute that specifies a function to be called when the button is clicked. The function is called No.	
+
+
+//var randomNumber = Math.floor((Math.random() *6) +1);
+
+function Yes() {
+var randomNumber = Math.floor((Math.random() *6) +1);
+//console.log(randomNumber);
+if (randomNumber == 1){
+	//console.log("this is run if myNum is equal to 3");
+	document.getElementById('Dice').src = "img/pic1.gif";
+
+
+}
+
+
+
+//This is a function called Yes that will generate a random number between 1 and 6  and display an image to the user. The image to display is determined by the value of randomNumber. If randomNumber is 1, then the image with the file name "pic1.gif" will be displayed.
+
+else if (randomNumber == 2){
+document.getElementById('Dice').src = "img/pic2.gif";
+}
+else if (randomNumber == 3){
+document.getElementById('Dice').src = "img/pic3.gif";
+}
+else if (randomNumber == 4){
+document.getElementById('Dice').src = "img/pic4.gif";
+}
+else if (randomNumber == 5){
+document.getElementById('Dice').src = "img/pic5.gif";
+}
+else if (randomNumber == 6){
+document.getElementById('Dice').src = "img/pic6.gif";
+}
+}
+//These lines of code are part of the Yes function. They are a series of else if statements that check the value of randomNumber and display a different image file based on the value.If randomNumber is 2, then the image with the file name "pic2.gif" will be displayed. 
+
+
+function No() {
+
+	var messages =["Be polite","Be strong","Be nice"];
+var result = Math.floor(Math.random() *3);
+ console.log(result);
+alert(messages[result]);
+
+}
+//This is a function called No that will display an alert message to the user. The message is chosen randomly from the array messages using the Math.random function. The Math.floor function is used to round down to the nearest whole number.The function is called by writing No and it will display one of the three messages: "Be polite", "Be strong", or "Be nice".
+
+</script>
+</body>
+
+
+</html>
